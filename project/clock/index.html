@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Clock</title>
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+		body {
+			font-family: "Open Sans";
+			margin-top: 300px;
+			text-align: center;
+			color: #ffffff;
+		}
+		#clock {
+			font-weight: 300;
+			font-size: 120px;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="clock">00:00:00</h1>
+	<p id="color">#000000</p>
+
+	<script type="text/javascript">
+		var clock = document.getElementById('clock');
+		var color = document.getElementById('color');
+
+		function hexoClock() {
+			var time = new Date();
+			var h = time.getHours().toString();
+			var m = time.getMinutes().toString();
+			var s = time.getSeconds().toString();
+
+			if (h.length < 2) {
+				h = '0' + h;
+			}
+			if (m.length < 2) {
+				m = '0' + m;
+			}
+			if (s.length < 2) {
+				s = '0' + s;
+			}
+
+			var clockString = h + ':' + m + ':' + s;
+			var colorString = '#' + h + m + s;
+
+			clock.textContent = clockString;
+			color.textContent = colorString;
+
+			document.body.style.background = colorString;
+		}
+
+		hexoClock();
+		setInterval(hexoClock, 1000);
+	</script>
+	 <script src="../../js/back.js" charset="utf-8"></script>
+</body>
+</html>

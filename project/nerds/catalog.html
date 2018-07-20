@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+	<title>Каталог</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="img/favicon.ico" type="image/ico">
+</head>
+<body>
+	<header class="main-header main-catalog">
+		<div class="container clearfix">
+			<a href="index.html" class="logo"><img src="img\main-header-logo.png" alt="logo" width="140" height="57"></a>
+			<nav class="main-nav">
+				<ul>
+					<li><a href="index.html">студия</a></li>
+					<li><a href="#">клиенты</a></li>
+					<li><a class="active" href="catalog.html">магазин</a></li>
+					<li><a href="#">контакты</a></li>
+					<li><a href="#">корзина</a></li>
+				</ul>
+			</nav>
+		</div>
+		<h1>добро пожаловать в магазин <br> готовых макетов</h1>
+	</header>
+	<div class="container">
+		<div class="catalog clearfix">
+			<div class="catalog-left-col">
+				<form action="#" method="post">
+					<div class="catalog-filter">
+						<h2>стоимость:</h2>
+						<div class="catalog-range-filter">
+							<div class="catalog-filter-scale"></div>
+							<div class="catalog-filter-scale-btn catalog-max-btn"></div>
+							<div class="catalog-filter-scale-btn catalog-min-btn"></div>
+						</div>
+						<div class="catalog-price-control">
+							<span>от</span>
+							<input type="text" value="0">
+							<span>до</span>
+							<input type="text" value="15 000">
+						</div>
+						<h2>сетка:</h2>
+						<input type="radio" id="adaptive" name="grid" checked>
+						<label for="adaptive" class="catalog-label"><span>Адаптивная</span></label>
+						<input type="radio" id="fixed" name="grid">
+						<label for="fixed" class="catalog-label"><span>Фиксированная</span></label>
+						<input type="radio" id="rubber" name="grid">
+						<label for="rubber" class="catalog-label"><span>Резиновая</span></label>
+
+						<h2 class="features">особенности:</h2>
+
+						<input type="checkbox" id="slider" name="features" checked>
+						<label for="slider"><span>Слайдер</span></label>
+
+						<input type="checkbox" id="block-feautures" name="features">
+						<label for="block-feautures"><span>Блок&nbsp;преимуществ</span></label>
+
+						<input type="checkbox" id="news" name="features" checked>
+						<label for="news"><span>Новости</span></label>
+
+						<input type="checkbox" id="gallary" name="features">
+						<label for="gallary"><span>Галлерея</span></label>
+
+						<input type="checkbox" id="basket" name="features">
+						<label for="basket"><span>Корзина</span></label>
+					</div>
+				</form>
+			</div>
+			<div class="catalog-right-col">
+				<div class="catalog-sort">
+					<span>сортировать:</span>
+					<a href="#">по цене</a>
+					<a href="#">по типу</a>
+					<a href="#">по функционалу</a>
+					<div class="catalog-sort-arrow-block">
+						<a href="#">▼</a>
+						<a href="#">▲</a>
+					</div>
+				</div>
+				<div class="clearfix">
+					<div class="catalog-item">
+						<div class="catalog-item-circle"></div>
+						<div class="catalog-item-circle"></div>
+						<div class="catalog-item-circle"></div>
+						<div class="catalog-item-sub-block">
+							<h2>suset</h2>
+							<p>Интернет-магазин с личным кабинетом</p>
+							<a href="#" class="btn">10000 Р.</a>
+						</div>
+						<img src="img/catalog-img-desert.jpg" alt="">
+					</div>
+					<div class="catalog-item">
+						<div class="catalog-item-circle"></div>
+						<div class="catalog-item-circle"></div>
+						<div class="catalog-item-circle"></div>
+						<div class="catalog-item-sub-block">
+							<h2>suset</h2>
+							<p>Интернет-магазин с личным кабинетом</p>
+							<a href="#" class="btn">10000 Р.</a>
+						</div>
+						<img src="img/catalog-img-aviator.jpg" alt="">
+					</div>
+					<div class="catalog-item">
+						<div class="catalog-item-circle"></div>
+						<div class="catalog-item-circle"></div>
+						<div class="catalog-item-circle"></div>
+						<div class="catalog-item-sub-block">
+							<h2>suset</h2>
+							<p>Интернет-магазин с личным кабинетом</p>
+							<a href="#" class="btn">10000 Р.</a>
+						</div>
+						<img src="img/catalog-img-thai.jpg" alt="">
+					</div>
+					<div class="catalog-item">
+						<div class="catalog-item-circle"></div>
+						<div class="catalog-item-circle"></div>
+						<div class="catalog-item-circle"></div>
+						<div class="catalog-item-sub-block">
+							<h2>suset</h2>
+							<p>Интернет-магазин с личным кабинетом</p>
+							<a href="#" class="btn">10000 Р.</a>
+						</div>
+						<img src="img/catalog-img-forte.jpg" alt="">
+					</div>
+					<div class="catalog-item">
+						<div class="catalog-item-circle"></div>
+						<div class="catalog-item-circle"></div>
+						<div class="catalog-item-circle"></div>
+						<div class="catalog-item-sub-block">
+							<h2>suset</h2>
+							<p>Интернет-магазин с личным кабинетом</p>
+							<a href="#" class="btn">10000 Р.</a>
+						</div>
+						<img src="img/catalog-img-dovetail.jpg" alt="">
+					</div>
+					<div class="catalog-item">
+						<div class="catalog-item-circle"></div>
+						<div class="catalog-item-circle"></div>
+						<div class="catalog-item-circle"></div>
+						<div class="catalog-item-sub-block">
+							<h2>suset</h2>
+							<p>Интернет-магазин с личным кабинетом</p>
+							<a href="#" class="btn">10000 Р.</a>
+						</div>
+						<img src="img/catalog-img-avenue.jpg" alt="">
+					</div>
+				</div>
+				<div class="catalog-paginator">
+					<span class="active">1</span>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">следующая</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="map">
+			<div class="map-block">
+				<h2>NЁRDS <span>DESIGN STUDIO</span></h2>
+				<p>350000, Краснодар,<br> ул. Головатого, 100</p>
+				<p>тел. +7 (861) 275-75-75</p>
+				<a href="#" class="btn map-btn">напишите нам</a>
+			</div>
+			<img src="img/map.jpg" alt="map">
+		</div>
+		<div class="container">
+			<div class="footer-block clearfix">
+				<div class="footer-block-left-col">
+					<a href="#" class="social-btn"><img src="img/vk.png" alt="vk"></a>
+					<a href="#" class="social-btn"><img src="img/fb.png" alt="fb"></a>
+					<a href="#" class="social-btn"><img src="img/inst.png" alt="instagram"></a>
+				</div>
+				<div class="footer-block-right-col">
+					<h2>Давайте дружить, это выгодно!</h2>
+					<p>Скидка 10% для друзей из социальных сетей.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="../../js/back.js" charset="utf-8"></script>
+</body>
+</html>

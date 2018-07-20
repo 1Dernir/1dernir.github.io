@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sedona</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="background">
+  <header class="main-header">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-list--element">
+          <a href="#" class="nav-list__item">главная</a>
+          <button id="closeNav" class="nav-list--close"></button>
+        </li>
+        <li class="nav-list--element"><a href="#" class="nav-list__item">фото и видео</a></li>
+        <li class="nav-list--element"><a href="#" class="nav-list__item">форма отзыва</a></li>
+        <li class="nav-list--element"><a href="#" class="nav-list__item">html academy</a></li>
+        <li>
+          <a class="nav-list__item"></a>
+          <div class="main-header__logo">
+            <img src="img/logo-mobile.png" alt="Логотип Седона">
+          </div>
+          <button id="openNav" class="nav-list--open"></button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="content">
+    <div class="intro">
+      <img class="intro__title"  src="img/welcome-tablet.png" alt="welcome to sedona">
+    </div>
+    <section class="reasons">
+      <div class="wrapper">
+        <div class="reasons__header">
+          <h2 class="reasons__title">
+             СЕДОНА — небольшой <br>
+             городок в АРИЗОНЕ, заслуживающий большего!
+           </h2>
+          <p class="reasons__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
+      </div>
+    </section>
+    <section class="features">
+      <div class="container">
+        <div class="feature__item">
+          <div class="wrapper">
+            <h2 class="feature__title">настоящий городок</h2>
+            <p class="feature__number">— №1 —</p>
+            <p class="feature__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+          </div>
+        </div>
+        <div class="feature__image--city"></div>
+      </div>
+      <div class="wrapper">
+        <ul class="feature__list">
+          <li class="feature__list-item list__item-home">
+            <h2 class="feature__list-title">жилье</h2>
+            <p class="feature__list-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li class="feature__list-item list__item-gift">
+            <h2 class="feature__list-title">сувениры</h2>
+            <p class="feature__list-text">Не только китайского, но и местного производства!</p>
+          </li>
+          <li class="feature__list-item list__item-food">
+            <h2 class="feature__list-title">еда</h2>
+            <p class="feature__list-text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="feature__item item-bridge">
+          <div class="wrapper">
+            <h2 class="feature__title">там есть мост дьявола</h2>
+            <p class="feature__number">— №2 —</p>
+            <p class="feature__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
+        </div>
+        <div class="feature__image--bridge"></div>
+      </div>
+      <div class="container">
+        <div class="feature__item item-small-square">
+          <div class="wrapper">
+            <h2 class="feature__title">небольшая площадь</h2>
+            <p class="feature__number">— №3 —</p>
+            <p class="feature__text">ВСЕ интересные места находятся очень близко</p>
+          </div>
+        </div>
+        <div class="feature__item item-butiful-road">
+          <div class="wrapper">
+            <h2 class="feature__title">красивая дорога</h2>
+            <p class="feature__number">— №4 —</p>
+            <p class="feature__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+          </div>
+        </div>
+        <div class="feature__item item-few-people">
+          <div class="wrapper">
+            <h2 class="feature__title">мало туристов</h2>
+            <p class="feature__number">— №5 —</p>
+            <p class="feature__text">Большинство едет в гранд каньон и толпится там</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="search">
+      <div class="wrapper">
+        <h2 class="search__title">заинтересовались?</h2>
+        <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <a href="#" class="search__btn">найти гостиницу</a>
+      </div>
+    </section>
+    <section class="map">
+      <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994959.3933900578!2d-112.37913913130355!3d34.79403875809311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1530967972996"  frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="wrapper">
+      <div class="container">
+        <h2 class="footer__title">#visitSEDONA</h2>
+        <ul class="footer__social">
+          <li class="social__item twitter"><a href="#"></a></li>
+          <li class="social__item fb"><a href="#"></a></li>
+          <li class="social__item youtube"><a href="#"></a></li>
+        </ul>
+        <div class="footer__copyright">
+          <p>разработано</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="../../js/back.js" charset="utf-8"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end file -->
