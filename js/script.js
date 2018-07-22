@@ -54,7 +54,7 @@ function paginatorNumber() {
       slides[j].classList.toggle('invisible');
 
       for (let j = 0; j < paginatorItem.length; j++) {
-        if (paginatorItem[j].className.indexOf('active') != -1) {
+        if (paginatorItem[j].classList.contains('active')) {
           let paginatorActiveEl  = paginatorItem[j];
           paginatorActiveEl.classList.remove('active');
           invis();
@@ -75,7 +75,7 @@ next.onclick = function (event) {
   let activeEl = document.querySelector('.active');
 
   for (let i = 0; i < paginatorItem.length; i++) {
-    if (paginatorItem[i].className.indexOf('active') != -1) {
+    if (paginatorItem[i].classList.contains('active')) {
       var paginatorActiveEl  = paginatorItem[i];
       var pageNumActive = i + 1;
     }
@@ -101,7 +101,7 @@ back.onclick = function (event) {
   let activeEl = document.querySelector('.active');
 
   for (let i = 0; i < paginatorItem.length; i++) {
-    if (paginatorItem[i].className.indexOf('active') != -1) {
+    if (paginatorItem[i].classList.contains('active')) {
       var paginatorActiveEl  = paginatorItem[i];
       var pageNumActive = i - 1;
     }
@@ -122,7 +122,7 @@ back.onclick = function (event) {
 
 function invis() {
   for (var i = 0; i < slides.length; i++) {
-    if (slides[i].className.indexOf('active') == -1) {
+    if (!(slides[i].classList.contains('active'))) {
       slides[i].classList.add('invisible');
     }
   }
@@ -131,7 +131,7 @@ function invis() {
 function heightResize() {
   let widthPage = document.documentElement.clientWidth;
   for (let i = 0; i < slides.length; i++) {
-    if (slides[i].className.indexOf('active') != -1) {
+    if (slides[i].classList.contains('active')) {
       var countContent = slides[i].getElementsByClassName('content-item');
     }
   }
